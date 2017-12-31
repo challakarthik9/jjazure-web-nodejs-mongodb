@@ -1,2 +1,29 @@
-# jjazure-web-singlepage
-Web app using NodeJS, Angular and MongoDB
+# JJ Single Page Web App
+Web app built with NodeJS, Angular and MongoDB
+
+Using:
+1. Mongoose - ORM for MongoDB and NodeJS
+2. Express - web framework for NodeJS
+
+MongoDB is data store.
+
+What is difference Web App and Web Site ? [link]Wh(https://blog.nodejitsu.com/single-page-apps-with-nodejs/)
+
+Demo created based on this [blog](https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular)
+
+## Build and start server locally
+```bash
+npm install
+node server.js
+```
+
+Open web browser with link http://localhost:8080
+
+## Azure deployment
+### Deploy data store
+Create Azure DocumentDB with MongoDB API
+TODO
+
+### Deploy website
+Deploy web app nodejs
+TODO
