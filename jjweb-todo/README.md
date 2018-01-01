@@ -1,5 +1,5 @@
 # JJ Single Page ToDo Web App
-Web app built with NodeJS, Angular and MongoDB
+Web app built with MongoDB, Express, Angular and NodeJS (MEAN stack)
 
 Using:
 1. Mongoose - ORM for MongoDB and NodeJS
@@ -10,6 +10,10 @@ MongoDB is data store.
 What is difference Web App and Web Site ? [link](https://blog.nodejitsu.com/single-page-apps-with-nodejs/)
 
 Demo created based on this [blog](https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular)
+
+Azure documentation for sample MEAN application [link](https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-mongodb-nodejs)
+
+How to migrate existing app [link](https://docs.microsoft.com/en-us/azure/cosmos-db/create-mongodb-nodejs)
 
 ## Build and start server locally
 ```bash
