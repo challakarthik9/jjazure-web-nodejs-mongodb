@@ -11,6 +11,9 @@ What is difference Web App and Web Site ? [link]Wh(https://blog.nodejitsu.com/si
 
 Demo created based on this [blog](https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular)
 
+Azure documentation [link](https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-mongodb-nodejs)
+
+How to migrate existing app [link](https://docs.microsoft.com/en-us/azure/cosmos-db/create-mongodb-nodejs)
 ## Build and start server locally
 ```bash
 npm install
@@ -21,7 +24,8 @@ Open web browser with link http://localhost:8080
 
 ## Azure deployment
 ### Deploy data store
-Create Azure DocumentDB with MongoDB API
+Create Azure CosmosDB with MongoDB API
+[HowTo](https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-mongodb-nodejs-part5)
 TODO
 
 ### Deploy website
