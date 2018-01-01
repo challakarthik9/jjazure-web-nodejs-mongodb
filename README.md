@@ -22,8 +22,31 @@ Open web browser with link http://localhost:8080
 ## Azure deployment
 ### Deploy data store
 Create Azure CosmosDB with MongoDB API
-[HowTo](https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-mongodb-nodejs-part5)
-TODO
+```bash
+az group create --name myResourceGroup --location "West Europe"
+az cosmosdb create --name jjcosmosdb --resource-group myResourceGroup --kind MongoDB
+```
+[Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-mongodb-nodejs-part5)
+[Geo distribution](https://docs.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally)
+[Data Consistency](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels)
+
+Create new database and collection
+```bash
+az cosmosdb database create --name jjcosmosdb --key <KEY> --db-name jjtodo
+az cosmosdb collection create --name jjcosmosdb --key <KEY> --db-name jjtodo --collection-name todos --throughput 400
+```
+
+You can test conection to database
+```bash
+mongo jjcosmosdb.documents.azure.com:10255 -u jjcosmosdb -p <KEY> --ssl --sslAllowInvalidCertificates
+    use jjtodo
+    db.getCollectionNames()
+```
+
+Update connection string in database.js
+```
+remoteUrl : 'mongodb://jjcosmosdb:<KEY>@jjcosmosdb.documents.azure.com:10255/jjtodo?ssl=true&replicaSet=globaldb',
+```
 
 ### Deploy website
 Deploy web app nodejs
