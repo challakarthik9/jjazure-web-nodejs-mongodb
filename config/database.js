@@ -1,4 +1,4 @@
 module.exports = {
-    remoteUrl : 'mongodb://jjcosmosdb:xvFjNOcGQZiNd1tUpToIGNSwtS7EQ1tAB5Sp1SaBcr6o0ikf7ETCHiao4YEY6ZP0wxpk8LkbEJv1o8tkmZc19A==@jjcosmosdb.documents.azure.com:10255/jjtodo?ssl=true&replicaSet=globaldb',
+    remoteUrl : 'mongodb://jjcosmosdb:laIu9wOXBNx7jFfZXYdE0Cm5tDfW3ECDntsbu8TDOrojsxbxMlwoWU1VKsqmEBvzpAHn4LvS5C1lfnSPGA4RqQ==@jjcosmosdb.documents.azure.com:10255/?ssl=true&replicaSet=globaldb',
     localUrl: 'mongodb://localhost/meanstacktutorials'
 };

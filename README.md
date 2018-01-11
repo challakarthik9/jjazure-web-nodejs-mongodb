@@ -49,5 +49,13 @@ remoteUrl : 'mongodb://jjcosmosdb:<KEY>@jjcosmosdb.documents.azure.com:10255/jjt
 ```
 
 ### Deploy website
-Deploy web app nodejs
-TODO
+Deploy web app nodejs [documentation](https://docs.microsoft.com/en-us/azure/app-service/containers/quickstart-nodejs)
+1. Create new Web App for Linux with Node.js
+2. Setup v Deployment options - Local Git repository
+3. Copy git url, like https://jjeset@jjeset-todo.scm.azurewebsites.net:443/jjeset-todo.git
+4. Add remote to your repository (in VS code terminal) and push
+```ssh
+    git remote add azure https://jjeset@jjeset-todo.scm.azurewebsites.net:443/jjeset-todo.git
+    git push azure master
+```
+5. 
