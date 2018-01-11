@@ -58,4 +58,4 @@ Deploy web app nodejs [documentation](https://docs.microsoft.com/en-us/azure/app
     git remote add azure https://jjeset@jjeset-todo.scm.azurewebsites.net:443/jjeset-todo.git
     git push azure master
 ```
-5. 
+5. Test in browser https://jjeset-todo.azurewebsites.net/
